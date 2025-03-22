@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffe6e6; /* Light pink background */
+        }
+
+        /* Header and Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d32f2f; /* Red color for nav links */
+            font-weight: bold;
+        }
+
+        .sign-in-btn {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Today's Special Section */
+        .special-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .special-content {
+            max-width: 50%;
+        }
+
+        .special-content h3 {
+            color: #d32f2f;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .special-content h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .special-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .small-pizzas {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .small-pizzas img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .customize {
+            color: #d32f2f;
+            text-decoration: none;
+            border-bottom: 2px solid #d32f2f;
+        }
+
+        .price-btn {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .special-image img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+        }
+
+        /* Offers Section */
+        .offers-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .offers-section h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .offers-section p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .offers-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .offer-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .offer-card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .offer-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .offer-card .price {
+            font-weight: bold;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        .offer-card a {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Pizza_Hut_logo.svg/1200px-Pizza_Hut_logo.svg.png" alt="Pizza Hut Logo">
+        </div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#offers">OFFERS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT US</a>
+            <a href="#signin" class="sign-in-btn">SIGN IN</a>
+        </nav>
+    </header>
+
+    <!-- Today's Special Section -->
+    <section class="special-section" id="home">
+        <div class="special-content">
+            <h3>Today's Special Pizza</h3>
+            <h1>Meat Lovers – Chicken</h1>
+            <p>Rich tomato sauce base topped with cream cheese, onions, green chili...</p>
+            <div class="small-pizzas">
+                <img src="https://via.placeholder.com/80" alt="Small Pizza 1">
+                <img src="https://via.placeholder.com/80" alt="Small Pizza 2">
+                <img src="https://via.placeholder.com/80" alt="Small Pizza 3">
+                <img src="https://via.placeholder.com/80" alt="Small Pizza 4">
+            </div>
+            <a href="#" class="customize">Customize order</a>
+            <a href="#" class="price-btn">1,260 Frw</a>
+        </div>
+        <div class="special-image">
+            <img src="https://via.placeholder.com/400" alt="Meat Lovers Pizza">
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section" id="offers">
+        <h2>Special Offers</h2>
+        <p>Save big on your favorite pizzas with our exclusive deals!</p>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <img src="https://via.placeholder.com/100" alt="Family Feast Deal">
+                <h4>Family Feast Deal</h4>
+                <p>Get a large pizza, garlic bread, and a 1.5L soda for the whole family!</p>
+                <div class="price">3,500 Frw</div>
+                <a href="#">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <img src="https://via.placeholder.com/100" alt="Buy 1 Get 1 Free">
+                <h4>Buy 1 Get 1 Free</h4>
+                <p>Order any large pizza and get a medium pizza free!</p>
+                <div class="price">2,000 Frw</div>
+                <a href="#">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <img src="https://via.placeholder.com/100" alt="Lunch Special">
+                <h4>Lunch Special</h4>
+                <p>Grab a personal pizza and a drink for a quick lunch!</p>
+                <div class="price">1,000 Frw</div>
+                <a href="#">Order Now</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

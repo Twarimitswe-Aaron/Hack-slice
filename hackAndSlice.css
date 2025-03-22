@@ -315,3 +315,81 @@ section .right .image.a4{
     height: 33rem;
     animation: rotate1 500s linear infinite;
 }
+
+.offers-section {
+    padding: 50px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-section h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.offers-section p {
+    font-size:1.2rem ;
+    line-height: 1.2rem;
+    color: #A48888;
+    margin-bottom: 30px;
+}
+
+.offers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.offer-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.offer-card:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    
+}
+
+.offer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.offer-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size:1.2rem ;
+    line-height: 1.2rem;
+    color: #A48888;
+}
+.offer-card .price {
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.offer-card a button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem; 
+    border: none;
+    background-color: var(--button);
+    color: white;
+}
+.offer-card a button:hover{
+    width: 6.5rem;
+    height: 2.5rem;
+    font-size: 1em;
+}
