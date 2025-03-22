@@ -1,0 +1,27 @@
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+@keyframes slideBackground {
+    0%, 25% {
+      background-image: url(./Images/big\ pizza.png);
+    }
+    25%, 50% {
+      background-image: url(./Images/big\ pizza1.png);
+    }
+    50%, 75% {
+      background-image: url(./Images/big\ pizza2.png);
+    }
+    75%, 100% {
+      background-image: url(./Images/big\ pizza1.png);
+    }
+  }
+  
